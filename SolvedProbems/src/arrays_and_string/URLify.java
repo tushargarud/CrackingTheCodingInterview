@@ -18,7 +18,8 @@ public class URLify
 		if(j<0)
 			return str;
 
-		for(int i=chars.length-1; i>=0 && j>=0 && j<i;)
+		int i;
+		for(i=chars.length-1; i>=0 && j>=0 && j<i;)
 		{
 			if(chars[j]==' ')
 			{
@@ -35,6 +36,6 @@ public class URLify
 		while(i!=0 && chars[i]!=' ')
 			i--;
 		String result = new String();
-		return result.subString(i-1,chars.length-i);
+		return result.substring(i-1,chars.length-i);
 	}
 }
