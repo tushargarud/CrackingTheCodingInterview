@@ -1,4 +1,4 @@
-package arrays_and_strings;
+package arrays_and_string;
 
 public class CheckPermutation
 {
